@@ -1,0 +1,124 @@
+:root {
+  .slippage-tolerance {
+    p {
+      font-size: 12px;
+      color: var(--color-body);
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .button {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        background-color: var(--color-slippage-btn);
+        color: #ffffff;
+        padding: 7px 0;
+        margin-right: 14px;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid var(--color-line);
+      }
+
+      .active-button {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        background-color: var(--color-primary);
+        color: #ffffff;
+        padding: 7px 0;
+        margin-right: 14px;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid var(--color-line);
+      }
+
+      .custom-slippage-tolerance {
+        background-color: var(--color-order-input-bg);
+        border-radius: 6px;
+        padding: 7px 0;
+        width: 100%;
+        border: 1px solid var(--color-line);
+
+        input {
+          padding: 0;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          color: var(--color-slippage-input);
+
+          &::placeholder {
+            color: var(--color-slippage-input);
+            opacity: 1; /* Firefox */
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: var(--color-slippage-input);
+          }
+
+          &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: var(--color-slippage-input);
+          }
+        }
+
+        .percentage {
+          color: var(--color-slippage-input);
+          opacity: 1; /* Firefox */
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          padding-right: 7px;
+        }
+
+        .hidden-percentage {
+          color: var(--color-slippage-input);
+          opacity: 1; /* Firefox */
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          padding-left: 7px;
+          visibility: hidden;
+        }
+      }
+
+      .focus-custom-slippage-tolerance {
+        border: 1px solid var(--color-primary) !important;
+      }
+    }
+  }
+
+  .error {
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-error);
+    margin-top: 6px;
+  }
+
+  // tooltip
+  .tooltip-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-container {
+    display: inline-flex;
+
+    svg {
+      pointer-events: none;
+      path {
+        fill: var(--color-tooltip-body);
+      }
+    }
+  }
+}

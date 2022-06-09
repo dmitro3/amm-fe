@@ -1,0 +1,18 @@
+:root {
+  .type-buttons {
+    background-color: var(--color-input-bg);
+    border-radius: 10px;
+    margin-right: 16px;
+    height: 36px;
+    button {
+      width: 100px;
+      height: inherit;
+      border-radius: 10px;
+      color: var(--body-text);
+    }
+    .type-buttons--active {
+      background-color: var(--color-primary);
+      color: white;
+    }
+  }
+}

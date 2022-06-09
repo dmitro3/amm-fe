@@ -1,0 +1,12 @@
+:root {
+  .theme-textarea {
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid var(--color-line) !important;
+
+    &:focus {
+      border: 1px solid var(--color-primary) !important;
+      outline: none !important;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+@import '../../../../styles/app';
+:root {
+  .theme-select__control {
+    border-radius: 8px !important;
+    background: #f5f5f5 !important;
+    min-width: 150px;
+
+    &--is-focused {
+      border: 1px solid transparent !important;
+    }
+    .theme-select__value-container {
+      min-height: 36px;
+      padding: 0;
+    }
+    .theme-select__multi-value {
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-radius: $space-4;
+      height: 26px;
+      margin: 5px 5px 5px 0;
+      display: flex;
+      align-items: center;
+
+      .theme-select__multi-value__label {
+        color: var(--color-white);
+        padding: 5px 6px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    .theme-select__multi-value:first-child {
+      margin-left: 0px;
+    }
+    .theme-select__multi-value__remove:hover {
+      background: var(--color-primary) !important;
+      svg {
+        color: var(--color-white);
+      }
+    }
+    .theme-select__placeholder {
+      margin-left: $space-12;
+    }
+  }
+
+  .theme-select__control--is-disabled {
+    .theme-select__value-container {
+      background: #f5f5f5 !important;
+    }
+    .theme-select__multi-value--is-disabled {
+      background: var(--color-placeholder);
+    }
+    .theme-select__multi-value__remove {
+      background: var(--color-placeholder);
+    }
+  }
+
+  .theme-select__menu {
+    z-index: 100 !important;
+    margin: 4px 0 !important;
+    border-radius: 4px !important;
+  }
+
+  .theme-select__control:focus {
+    outline: none;
+    border: none;
+  }
+  .theme-select__control--menu-is-open:focus {
+    outline: none;
+    border: none;
+  }
+
+  // state
+  .theme-select__value-container:focus {
+    outline: none;
+  }
+
+  .theme-select__value-container--has-value {
+    padding-left: 5px !important;
+    outline: none !important;
+  }
+  .theme-select__menu-list {
+    padding: 0 !important;
+    cursor: pointer !important;
+  }
+  .theme-select__option--is-selected {
+    background: var(--color-primary) !important;
+    border-radius: 4px;
+  }
+  .css-2b097c-container:focus {
+    border: none !important;
+    outline: none !important;
+  }
+
+  .theme-select__indicator-separator {
+    background-color: transparent !important;
+  }
+
+  .search-bar-container {
+    margin: 16px 13px 19px 13px;
+    position: relative;
+
+    .clear-search-icon-container {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      cursor: pointer;
+      transform: translateY(-50%);
+      height: 20px;
+
+      > img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .search-bar {
+      border-radius: 10px;
+      width: 100%;
+      border: 1px solid var(--color-line);
+      height: 38px;
+
+      input {
+        background-color: var(--input-background);
+        color: var(--text-color);
+        padding: 12px 40px 12px 14px;
+        border: none !important;
+      }
+      &::placeholder {
+        color: var(--text-color);
+      }
+    }
+
+    .search-bar-no-search-icon {
+      > div input {
+        margin-left: 10px;
+      }
+    }
+  }
+}

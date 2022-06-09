@@ -1,0 +1,52 @@
+.verify-email-faild {
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+
+  .verify-email-faild-container-margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .verify-email-faild-container {
+      box-sizing: border-box;
+      width: 600px;
+      background: #ffffff;
+      box-shadow: 0px 4px 180px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .icon {
+        width: 215px;
+        height: 215px;
+        margin-top: 43px;
+      }
+
+      .verify-email-faild-title {
+        font-size: 26px;
+        font-weight: 500;
+        margin-top: 34px;
+        text-align: center;
+      }
+
+      .verify-email-faild-content {
+        color: var(--placeholder);
+        margin-top: 20px;
+        margin-bottom: 22px;
+        font-size: 20px;
+        text-align: center;
+
+        .email-address {
+          font-style: italic;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

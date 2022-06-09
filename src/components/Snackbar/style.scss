@@ -1,0 +1,22 @@
+.snackbar {
+  padding: 12px;
+  min-width: 300px;
+  font-size: 14px;
+  color: white;
+  border-radius: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.color-info {
+  background: var(--color-info);
+}
+.color-error {
+  background: #ff5c5c;
+}
+.color-success {
+  background: #39d98a;
+}
+.color-warning {
+  background: #ffcc00;
+}

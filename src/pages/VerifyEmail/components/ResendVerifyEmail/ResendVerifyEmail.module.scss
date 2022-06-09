@@ -1,0 +1,66 @@
+.resend-verify-email {
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+
+  .resend-verify-email-container-margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .resend-verify-email-container {
+      width: 600px;
+      background: #ffffff;
+      box-shadow: 0px 4px 180px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      box-sizing: border-box;
+
+      .icon {
+        width: 215px;
+        height: 215px;
+        margin-top: 43px;
+      }
+
+      .resend-verify-email-title {
+        color: #14142b;
+        margin-top: 34px;
+        font-size: 26px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .resend-verify-email-content {
+        color: var(--placeholder);
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 28px;
+
+        .email-address {
+          font-style: italic;
+          font-weight: 700;
+        }
+      }
+
+      .resend-verify-email-resend-btn {
+        width: 100%;
+        min-height: 44px;
+        margin-top: 34px;
+        margin-bottom: 37px;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      .resend-verify-email-resend-btn:hover {
+        background-color: var(--primary-button-bg) !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+:root {
+  .hidden {
+    visibility: hidden;
+    margin-top: 32px;
+    margin-left: 32px;
+  }
+
+  .close-button {
+    margin-top: 32px;
+    margin-right: 32px;
+    color: var(--color-dialog-label);
+  }
+
+  .title {
+    font-size: 26px;
+    margin: 30px 0;
+    font-weight: 500;
+    color: var(--color-dialog-title);
+  }
+
+  .order-confirmation-body {
+    margin: 0 30px 30px 30px;
+
+    .info {
+      margin-bottom: 30px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .field {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .label {
+        display: inline-flex;
+        padding-top: 8px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--color-body);
+      }
+
+      .value {
+        display: inline-flex;
+        padding-top: 8px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--color-body);
+      }
+
+      .method {
+        margin-right: 8px;
+      }
+
+      .stellar-icon {
+        path {
+          fill: var(--color-body);
+        }
+      }
+    }
+  }
+
+  .functional-group {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .comeback {
+      margin-top: 8px;
+      cursor: pointer;
+      color: var(--color-body);
+      padding: 12px 0;
+      text-decoration: underline;
+    }
+  }
+}

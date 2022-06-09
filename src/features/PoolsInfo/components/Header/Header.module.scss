@@ -1,0 +1,118 @@
+:root {
+  .header {
+    border-radius: 20px;
+    background-color: var(--block-background);
+    color: var(--text-color);
+    width: 100%;
+    margin: 30px 0 0 0;
+
+    .wrapper {
+      display: flex;
+
+      .donut-chart {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .pool-name {
+        margin: 20px 20px 20px 0;
+
+        > div:first-child {
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 32px;
+          opacity: 0.7;
+          color: var(--title-active);
+        }
+
+        > div:last-child {
+          display: flex;
+          align-items: center;
+          margin-top: 8px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          opacity: 0.7;
+          color: var(--title-active);
+
+          > img {
+            margin-left: 10px;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      .pool-type {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 3px 6px;
+        color: var(--color-white);
+        border-radius: 10px;
+        height: fit-content;
+        margin-top: 25px;
+        background: var(--color-primary-darker);
+      }
+
+      .pool-info {
+        padding: 20px 20px 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+
+        .pair {
+          color: var(--title-active);
+          opacity: 0.7;
+
+          .value {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 12px;
+          }
+
+          .label {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 120px;
+      width: 100%;
+      color: var(--color-body);
+    }
+
+    .pool-id {
+      margin: 8px 0;
+      img {
+        margin-left: 10px;
+        width: 15px;
+      }
+    }
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    background-color: #3a449c;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 3px 6px;
+    margin: 3px 0 0 10px;
+    color: white;
+  }
+}

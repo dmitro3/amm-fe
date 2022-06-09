@@ -1,0 +1,22 @@
+.maintain {
+  height: calc(100vh - 64px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    color: #14142b;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  img.img-maintain {
+    margin: auto;
+    text-align: center;
+    display: block;
+  }
+}

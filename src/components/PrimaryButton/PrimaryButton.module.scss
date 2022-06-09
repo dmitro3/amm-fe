@@ -1,0 +1,31 @@
+:root {
+  .primary-button {
+    background-color: var(--primary-button-bg);
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 17px;
+    min-width: 70px;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    :hover {
+      background: #3a449c;
+    }
+    &.disable {
+      background: #e4e4eb;
+      opacity: 0.5;
+      border-radius: 15px;
+      color: #a0a3bd;
+      cursor: not-allowed;
+    }
+  }
+}

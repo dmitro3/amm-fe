@@ -1,0 +1,236 @@
+:root {
+  .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px solid var(--color-line);
+    border-radius: 10px;
+    background-color: var(--color-bg-balances);
+    position: relative;
+
+    .title {
+      h3 {
+        color: var(--color-title-active);
+      }
+      .estimated-value {
+        min-width: 300px;
+        div {
+          color: var(--color-placeholder);
+        }
+        .value {
+          margin: 30px 0;
+          font-size: 40px;
+          font-weight: bold;
+          color: var(--color-body);
+        }
+      }
+      .acount {
+        .acount-blance {
+          color: var(--color-placeholder);
+        }
+        .cost {
+          margin-top: 8px;
+          color: var(--color-body);
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+    .chart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .select-form {
+      margin-right: 60px;
+      .select-element {
+        label {
+          margin: 10px 8px 0 0;
+          min-width: 60px;
+          color: var(--color-body);
+          text-align: right;
+        }
+        margin-top: 30px;
+        display: flex;
+        > div {
+          min-width: 160px;
+        }
+      }
+    }
+
+    .detail {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      a {
+        margin-right: 5px;
+        color: var(--active-tab);
+      }
+      img {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .table-info {
+    background-color: var(--color-bg-balances);
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+
+    h3 {
+      color: var(--color-title-active);
+    }
+
+    .select-order {
+      display: flex;
+      .select-order-element {
+        label {
+          margin: 8px 8px 0 0;
+          color: var(--body-text);
+        }
+        display: flex;
+      }
+    }
+
+    .select-order-element:last-child {
+      margin-left: 30px;
+    }
+
+    .table {
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        padding: 25px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        color: var(--placeholder);
+      }
+      td {
+        color: var(--text-color);
+      }
+    }
+    .detail {
+      font-size: 14px;
+      text-align: right;
+      margin-top: 10px;
+      background-color: var(--filter-input-background);
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &__link {
+        text-decoration: none;
+        margin-right: 3px;
+        color: var(--color-title-active);
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  .footer-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+    color: var(--body-text);
+  }
+
+  // order
+  .orders {
+    display: flex;
+    padding: 30px 0;
+    > div {
+      flex-grow: 1;
+      // padding: 20px;
+      // margin-left: 230px;
+      .orders-title {
+        margin: 30px 0;
+        padding-left: 30px;
+        color: var(--color-title-active);
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+    }
+    .orders-body {
+      padding: 7px;
+      border-radius: 10px;
+      border: 1px solid var(--color-line);
+      background-color: var(--color-bg-balances);
+    }
+    .wrap-container {
+      border: 1px solid var(--line);
+      border-radius: 25px;
+      padding: 20px;
+      margin-top: 30px;
+      height: 750px;
+      background-color: var(--color-bg-balances);
+    }
+    .theme-custom-table {
+      border-spacing: 0pt;
+      border-collapse: separate;
+      width: 100%;
+      margin-bottom: 0 !important;
+      text-align: left;
+      color: var(--body-text);
+      .btn-cancel {
+        color: var(--color-warning);
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+      }
+    }
+    .footer-pagination {
+      display: flex;
+      justify-content: flex-end;
+      justify-items: center;
+      margin-top: 30px;
+      color: var(--body-text);
+    }
+  }
+  .MuiPaginationItem-page {
+    margin: 20px;
+    button {
+      background-color: var(--input-background);
+      color: var(--color-title-active);
+    }
+  }
+  td {
+    color: var(--color-title-active);
+  }
+  .transaction-input {
+    display: flex;
+    align-items: center;
+    .input-label {
+      padding-right: 20px;
+      color: var(--text-color);
+    }
+    .select-transaction {
+      color: black;
+    }
+  }
+  .search-input {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.apexcharts-legend-text {
+  color: white !important;
+}

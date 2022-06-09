@@ -1,0 +1,17 @@
+:root {
+  .item {
+    color: var(--body-text);
+    margin-bottom: 30px;
+    &__value {
+      color: var(--text-color);
+    }
+  }
+  .my-info {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--block-background);
+  }
+  .button {
+    margin-top: -10px;
+  }
+}

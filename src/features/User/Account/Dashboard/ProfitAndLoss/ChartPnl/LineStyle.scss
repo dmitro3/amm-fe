@@ -1,0 +1,9 @@
+.apexcharts-legend {
+  display: flex;
+  flex-direction: column;
+  z-index: 20000;
+  position: absolute;
+  top: 0px !important;
+  right: 0px !important;
+  left: unset !important;
+}

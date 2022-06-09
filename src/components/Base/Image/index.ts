@@ -1,0 +1,1 @@
+export { CImage } from './Image';

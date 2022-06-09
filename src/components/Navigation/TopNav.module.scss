@@ -1,0 +1,120 @@
+:root {
+  .nav-bar {
+    box-shadow: none;
+    background-color: var(--nav-bar-bg);
+    .logo {
+      cursor: pointer;
+    }
+    .arrow-icon {
+      color: var(--arrow-icon);
+      font-size: 24px;
+    }
+    .button {
+      text-transform: none;
+      color: #000000;
+      margin-right: 16px;
+    }
+    .select-trading-btn {
+      min-width: 150px;
+      text-align: right;
+    }
+    .font-weight-bold {
+      font-weight: bold;
+    }
+    .text-color {
+      color: var(--title-active);
+    }
+
+    .nav-landing {
+      margin: 0px 16px 0px 0px;
+      text-align: center;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-end;
+      align-items: center;
+      font-weight: 500;
+
+      .white-paper {
+        color: var(--color-title-active);
+        cursor: pointer;
+        margin-right: 30px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      & > button {
+        width: 115px;
+        height: 30px;
+        padding: 10px;
+        display: flex;
+        align-self: flex-start;
+        border-radius: 10px;
+        font-size: 12px;
+        text-transform: none;
+        box-shadow: none;
+        line-height: 16px;
+        &:focus-visible {
+          background-color: red;
+        }
+      }
+
+      .signin-btn,
+      .signin-btn:hover {
+        background-color: #fff !important;
+        color: var(--primary-button-bg);
+        border: 1px solid var(--primary-button-bg);
+      }
+
+      .signin-btn {
+        margin-right: 16px;
+      }
+
+      .register-btn,
+      .register-btn:hover {
+        background-color: var(--primary-button-bg) !important;
+        color: #fff;
+      }
+    }
+
+    .notification {
+      display: flex;
+      position: relative;
+      div {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        font-weight: bold;
+        background-color: red;
+        border-radius: 50%;
+        padding: 5px;
+        height: 12px;
+        font-size: 12px;
+        color: white;
+        width: 13px;
+      }
+    }
+  }
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    .icon {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .dropdown-currency {
+    max-height: 165px;
+    overflow-y: auto;
+  }
+  .hidden-trade-button {
+    visibility: hidden;
+  }
+}

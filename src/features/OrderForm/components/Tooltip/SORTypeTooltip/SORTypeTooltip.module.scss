@@ -1,0 +1,12 @@
+:root {
+  .icon-container {
+    display: inline-flex;
+
+    svg {
+      pointer-events: none;
+      path {
+        fill: var(--color-tooltip-body);
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+:root {
+  .orders {
+    display: flex;
+    padding: 20px;
+    > div {
+      flex-grow: 1;
+      padding: 20px;
+      margin-left: 260px;
+      .orders-title {
+        margin-bottom: 20px;
+        color: var(--color-title-active);
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+    }
+    .orders-body {
+      position: relative;
+      padding: 7px;
+      border-radius: 10px;
+      border: 1px solid var(--color-line);
+      background-color: var(--mytrans-table-bg);
+    }
+    .wrap-container {
+      border: 1px solid var(--line);
+      border-radius: 25px;
+      padding: 20px;
+      margin-top: 30px;
+      height: 750px;
+      background-color: var(--block-background);
+    }
+    .theme-custom-table {
+      border-spacing: 0pt;
+      border-collapse: separate;
+      width: 100%;
+      margin-bottom: 0 !important;
+      text-align: left;
+      color: var(--body-text);
+      .btn-cancel {
+        color: var(--color-warning);
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+      }
+    }
+    .footer-pagination {
+      display: flex;
+      justify-content: flex-end;
+      justify-items: center;
+      margin-top: 30px;
+      color: var(--body-text);
+    }
+  }
+  .MuiPaginationItem-page {
+    margin: 20px;
+    button {
+      background-color: var(--input-background);
+      color: var(--color-title-active);
+    }
+  }
+  td {
+    color: var(--color-title-active);
+  }
+  .transaction-input {
+    display: flex;
+    align-items: center;
+    .input-label {
+      padding-right: 20px;
+      color: var(--text-color);
+    }
+    .select-transaction {
+      color: black;
+    }
+  }
+  .search-input {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

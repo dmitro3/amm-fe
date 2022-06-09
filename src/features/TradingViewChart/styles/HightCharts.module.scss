@@ -1,0 +1,14 @@
+:root {
+  .hight-chart-container {
+    // position: absolute;
+    // top: 195px;
+    height: 546px;
+    display: block;
+  }
+  .hight-chart-container-visible {
+    display: none;
+  }
+  .highcharts-credits {
+    visibility: hidden !important;
+  }
+}

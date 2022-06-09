@@ -1,0 +1,402 @@
+.main-btn {
+  position: relative;
+
+  .custom-range {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--input-background);
+    cursor: pointer;
+    width: max-content;
+  }
+
+  .show-date {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--input-background);
+    cursor: pointer;
+  }
+}
+
+.main-btn-in-chart {
+  position: relative;
+  background: var(--filter-input-background);
+  border-radius: 6px;
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+
+  .custom-range {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--title-active);
+    cursor: pointer;
+  }
+
+  > svg {
+    margin-left: 6px;
+  }
+
+  .show-date {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+}
+
+.form {
+  background-color: var(--background-date-range-picker);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 1000;
+
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-right: 0px !important;
+    padding: 16px 24px;
+    background: var(--background-date-range-picker);
+
+    .error {
+      color: red;
+    }
+
+    .cancelBtn {
+      margin-left: 8px;
+      border: none;
+      background-color: var(--range-on-select);
+      border-radius: 8px;
+      color: var(--color-cancel-btn);
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .submitBtn {
+      margin-left: 8px;
+      border: none;
+      background-color: var(--color-primary);
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    button {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  }
+}
+.btn-select {
+  min-width: max-content;
+  .btn-element {
+    margin-right: 16px;
+    border-radius: 10px;
+    height: 36px;
+    border: none;
+    background-color: var(--trade-button-mytransaction);
+    color: var(--title-active);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+  span {
+    color: var(--title-active);
+  }
+}
+button.btn-element:last-child {
+  padding: 0;
+}
+.rdrDateDisplayWrapper,
+.rdrMonthAndYearPickers,
+.rdrDefinedRangesWrapper {
+  display: none;
+}
+.rdrMonthAndYearWrapper {
+  align-items: unset;
+  height: 0px;
+  padding-top: 0px;
+}
+
+.rdrDayToday .rdrDayNumber span {
+  border: 1px solid var(--color-primary);
+  top: 0px;
+  bottom: 0px;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+
+  &:after {
+    display: none;
+  }
+}
+.rdrMonthName {
+  text-align: center;
+  color: var(--color-month-name);
+}
+.rdrMonth {
+  padding: 24px 24px 32px 24px;
+  width: 280px !important;
+  background-color: var(--background-date-range-picker);
+  border-bottom: 1px solid var(--border-date-range-picker);
+}
+
+.rdrMonth:first-child {
+  border-right: 1px solid var(--border-date-range-picker);
+}
+
+.rdrDay {
+  width: 40px !important;
+  height: 40px !important;
+
+  .rdrDayNumber {
+    span {
+      color: var(--color-date-range-picker);
+    }
+  }
+}
+
+.rdrDayPassive {
+  opacity: 0;
+}
+
+.rdrDayHovered {
+  .rdrDayStartPreview,
+  .rdrDayEndPreview {
+    border: none;
+    background: transparent;
+  }
+
+  .rdrDayStartPreview + .rdrDayNumber {
+    background-color: var(--color-primary);
+    border-radius: 8px 0 0 8px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .rdrDayEndPreview + .rdrDayNumber {
+    background-color: var(--color-primary);
+    border-radius: 0 8px 8px 0;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .rdrDayStartPreview.rdrDayEndPreview + .rdrDayNumber {
+    background: var(--color-primary);
+    border-radius: 8px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .rdrInRange + .rdrDayStartPreview.rdrDayEndPreview + .rdrDayNumber {
+    background: var(--color-primary);
+  }
+
+  .rdrDayStartPreview.rdrDayEndPreview {
+    background: transparent;
+  }
+
+  .rdrInRange + .rdrDayNumber {
+    span {
+      color: #f8f7fa !important;
+    }
+  }
+
+  .rdrInRange + span + .rdrDayNumber {
+    span {
+      color: #f8f7fa !important;
+    }
+  }
+}
+
+.rdrInRange {
+  top: 0px;
+  bottom: 0px;
+  background: var(--range-on-select);
+}
+
+.rdrInRange + .rdrDayNumber {
+  span {
+    color: var(--color-on-select) !important;
+  }
+}
+
+.rdrInRange + span + .rdrDayNumber {
+  span {
+    color: var(--color-on-select) !important;
+  }
+}
+
+.rdrDay {
+  .rdrDayStartPreview,
+  .rdrDayEndPreview {
+    border: none;
+    background: transparent;
+    top: 0px;
+    bottom: 0px;
+  }
+
+  .rdrDayEndPreview + .rdrDayNumber {
+    background: var(--color-primary);
+    top: 0px;
+    bottom: 0px;
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  .rdrDayStartPreview + .rdrDayNumber {
+    background: var(--color-primary);
+    top: 0px;
+    bottom: 0px;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .rdrStartEdge.rdrEndEdge + .rdrDayStartPreview + .rdrDayNumber {
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .rdrStartEdge.rdrEndEdge + .rdrDayNumber {
+    border-radius: 8px;
+  }
+
+  .rdrStartEdge + .rdrDayNumber {
+    border: none;
+    background: var(--color-primary);
+    top: 0px;
+    bottom: 0px;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .rdrStartEdge + span + .rdrDayNumber {
+    border: none;
+    background: var(--color-primary);
+    top: 0px;
+    bottom: 0px;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .rdrInRange + .rdrDayNumber {
+    top: 0px;
+    bottom: 0px;
+    background: var(--range-on-select);
+  }
+
+  .rdrInRange + span + .rdrDayNumber {
+    top: 0px;
+    bottom: 0px;
+    background: var(--range-on-select);
+  }
+
+  .rdrEndEdge + .rdrDayNumber {
+    border: none;
+    background: var(--color-primary);
+    top: 0px;
+    bottom: 0px;
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  .rdrEndEdge + span + .rdrDayNumber {
+    border: none;
+    background: var(--color-primary);
+    top: 0px;
+    bottom: 0px;
+    border-radius: 0px 8px 8px 0px;
+  }
+}
+
+.rdrDayInPreview {
+  border: none;
+  background: transparent;
+}
+
+.rdrDayInPreview + .rdrDayNumber {
+  background: var(--range-on-select);
+  top: 0px;
+  bottom: 0px;
+}
+
+.rdrDayDisabled {
+  background: transparent;
+  .rdrDayNumber {
+    background: transparent;
+
+    span {
+      color: var(--passive-date);
+    }
+  }
+}
+
+.rdrPprevButton {
+  i {
+    border: solid var(--title-active);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 2px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  margin: 0px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  left: 24px;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.rdrPprevButton:hover {
+  background: var(--range-on-select);
+}
+
+.rdrNextButton:hover {
+  background: var(--range-on-select);
+}
+
+.rdrNextButton {
+  margin: 0px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 24px;
+  background: transparent;
+  border-radius: 8px;
+
+  i {
+    margin: 0px;
+    border: solid var(--title-active);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}
+
+.fix-style-date-range {
+  position: relative;
+}
+
+.rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span:after,
+.rdrDayToday:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span:after,
+.rdrDayToday:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span:after,
+.rdrDayToday:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span:after {
+  background: none;
+}

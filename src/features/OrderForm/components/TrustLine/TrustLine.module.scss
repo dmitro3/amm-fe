@@ -1,0 +1,76 @@
+:root {
+  .label {
+    color: var(--color-body);
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 18px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--color-line);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+
+    .info-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        margin-right: 8px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-right: 8px;
+        width: 100%;
+
+        .name {
+          color: var(--color-body);
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 500;
+        }
+
+        .address {
+          color: var(--placeholder);
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 400;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .accept-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--color-success);
+
+      svg {
+        margin-right: 2px;
+      }
+
+      .icon {
+        display: inline-flex;
+        svg {
+          fill: var(--color-success);
+          path {
+            fill: var(--color-success);
+          }
+        }
+      }
+    }
+  }
+}

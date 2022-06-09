@@ -1,0 +1,1 @@
+export const MARKET_TRADE_DATA_LENGTH = 50;

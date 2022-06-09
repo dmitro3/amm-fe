@@ -1,0 +1,42 @@
+:root {
+  .hidden {
+    visibility: hidden;
+    margin-top: 32px;
+    margin-left: 32px;
+  }
+
+  .title {
+    font-size: 26px;
+    margin: 30px 0;
+    font-weight: 500;
+    color: var(--color-dialog-title);
+  }
+
+  .close-button {
+    margin-top: 32px;
+    margin-right: 32px;
+    color: var(--color-dialog-label);
+  }
+
+  .warning-body {
+    margin: 0 30px 30px 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .warning-icon {
+      //margin-top: 44px;
+      //margin-bottom: 30px;
+    }
+
+    .content {
+      margin: 30px 0 0 0;
+      color: var(--color-body);
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      overflow: auto;
+    }
+  }
+}

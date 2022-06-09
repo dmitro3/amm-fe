@@ -1,0 +1,35 @@
+:root {
+  .container {
+    font-size: 16px;
+    margin-top: 20px;
+    .title {
+      color: var(--color-title-active);
+      font-weight: bold;
+    }
+    .on_off {
+      margin-top: 10px;
+      display: flex;
+
+      .switch {
+        margin-top: -10px;
+      }
+      div:first-child {
+        color: var(--color-body);
+      }
+    }
+    .info {
+      margin-top: 16px;
+      color: var(--color-body);
+    }
+  }
+  .snackbar {
+    background: #39d98a;
+    padding: 12px;
+    min-width: 300px;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

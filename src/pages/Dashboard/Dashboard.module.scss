@@ -1,0 +1,82 @@
+:root {
+  .text-color {
+    color: var(--text-color);
+  }
+  .dashboard {
+    overflow-anchor: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .layout {
+      margin: 0 32px;
+      .block {
+        margin: 8px;
+        border-radius: 10px;
+        background-color: var(--block-background);
+      }
+      .block-my-transaction {
+        padding-bottom: 10px;
+        margin: 8px;
+        border-radius: 10px;
+        background-color: var(--block-background);
+      }
+    }
+    .hide-grid {
+      display: none;
+    }
+    .full-screen {
+      height: 100%;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+.warning-container {
+  margin-top: 8px 0px;
+  padding: 0px 12px;
+  width: 100%;
+  cursor: pointer;
+
+  .warning {
+    display: flex;
+    align-items: center;
+    background: rgba($color: #ffcc00, $alpha: 0.3);
+    border-radius: 8px;
+
+    margin-bottom: 8px;
+
+    > div {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      padding: 6px 10px;
+
+      > svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      > div {
+        color: var(--title-active);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 18px;
+      }
+    }
+
+    > svg {
+      margin-right: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  .warning-hide {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+  .container {
+    flex-grow: 1;
+    padding: 30px;
+    margin-left: 260px;
+    background: var(--background-color);
+  }
+  .balances {
+    margin-left: 0;
+    padding: 0;
+  }
+}

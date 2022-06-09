@@ -1,0 +1,143 @@
+:root {
+  .button-container {
+    padding-top: 9px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    select {
+      border: none;
+      height: 22px;
+      width: 60px;
+      border-radius: 6px;
+      color: var(--text-color);
+      background-color: var(--color-input-bg);
+      option {
+        color: var(--text-color);
+      }
+    }
+
+    .button {
+      height: 16px;
+      width: 26px;
+      border: none;
+      padding: 0px;
+      cursor: pointer;
+      border-radius: 5px;
+
+      img {
+        padding: 0px;
+        height: 16px;
+        width: 26px;
+      }
+    }
+
+    .not-active {
+      background-color: transparent;
+    }
+
+    .active {
+      background-color: var(--bg-orderbook-option);
+    }
+  }
+
+  .hardwarewallet-icon {
+    color: #ff3b3b;
+    display: flex;
+    align-items: center;
+  }
+  .text-blue {
+    color: #06c270;
+  }
+
+  .text-red {
+    color: #ff3b3b;
+  }
+
+  .table-head {
+    width: 19%;
+    color: #a0a3bd;
+    border: none;
+    font-size: 13px;
+    padding: 0px;
+  }
+
+  .table-cell {
+    border: none;
+    font-size: 11px;
+    color: #4e4b66;
+    color: var(--text-color);
+    padding: 1px;
+  }
+
+  .table-body {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: var(--block-background);
+  }
+
+  .table-row {
+    position: relative;
+    box-shadow: none;
+  }
+
+  .table-head-total {
+    width: 20%;
+    padding-right: 3px;
+  }
+  .table-cell-total {
+    width: 30%;
+    padding-right: 3px;
+  }
+
+  .Orderbook {
+    width: 100%;
+    height: 100%;
+  }
+  .ordertable__body,
+  .ordertable__head {
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: right;
+    margin: 2px 0;
+  }
+
+  .icon-network {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+  }
+
+  .ordertable__body > span,
+  .ordertable__head > span {
+    width: 33%;
+    text-align: right;
+  }
+
+  .ordertable__head {
+    color: var(--color-placeholder) !important;
+    padding-bottom: 5px;
+  }
+
+  .ordertable__head span:first-child {
+    text-align: left;
+  }
+
+  .ordertable__body {
+    font-size: 12px;
+    line-height: 17px;
+    height: 17px;
+  }
+
+  .ordertable-overlay {
+    position: absolute;
+    height: 100%;
+    opacity: 0.2;
+    right: 0;
+  }
+}

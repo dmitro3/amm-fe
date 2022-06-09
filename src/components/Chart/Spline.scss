@@ -1,0 +1,21 @@
+#tv_chart_container_liqui_pool,
+#tv_chart_container_liqui_pool_liquidity,
+#tv_chart_container_liqui_pool_volume,
+#pool-info {
+  .apexcharts-tooltip {
+    border-radius: 5px;
+    box-shadow: none;
+    cursor: default;
+    font-size: 14px;
+    left: 62px;
+    pointer-events: none;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 12;
+    transition: 0.15s ease all;
+  }
+}

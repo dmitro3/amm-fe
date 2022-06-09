@@ -1,0 +1,61 @@
+:root {
+  .ordertable__body,
+  .ordertable__head {
+    font-size: 13px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    text-align: right;
+    margin: 2px 0;
+    // background: red;
+    // opacity: 0.2;
+  }
+  .ordertable__head--wrapper {
+    padding: 5px 5px 5px 0px;
+  }
+
+  .ordertable__body > span,
+  .ordertable__head > span {
+    width: 33%;
+    text-align: right;
+  }
+
+  .ordertable__head {
+    color: var(--color-placeholder) !important;
+  }
+
+  .ordertable__head span:first-child {
+    text-align: left;
+  }
+
+  .ordertable__body {
+    font-size: 12px;
+    line-height: 17px;
+    height: 17px;
+  }
+
+  .ordertable-overlay {
+    position: absolute;
+    height: 100%;
+    opacity: 0.2;
+    right: 0;
+  }
+  .ordertable__head {
+    padding-right: 10px;
+  }
+  .ordertable__body--price {
+    display: flex;
+    align-items: center;
+  }
+  .market-trade-body {
+    overflow-y: auto;
+    height: 492px;
+  }
+  .market-trade-body::-webkit-scrollbar {
+    width: 5px !important;
+  }
+  .marketTrade {
+    padding-left: 6px;
+  }
+}

@@ -1,0 +1,53 @@
+:root {
+  :global {
+    .table-tabs {
+      margin-top: 48px;
+      .MuiTabs-indicator {
+        height: 3px;
+        background-color: #1a88c9;
+      }
+      .MuiTab-root {
+        color: var(--pool-active-tab);
+        min-width: 80px;
+        font-size: 16px;
+        text-transform: none;
+        letter-spacing: normal;
+        border-bottom: 1px solid var(--tab-border);
+      }
+
+      .Mui-selected {
+        color: var(--pool-active-tab);
+      }
+    }
+  }
+
+  .wrapper {
+    .tooltip {
+      &__item {
+        color: #848e9c;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+      }
+
+      &__other {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .tabs-panel {
+    background-color: var(--background-color);
+  }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    color: var(--color-body);
+    background: var(--block-background);
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+}

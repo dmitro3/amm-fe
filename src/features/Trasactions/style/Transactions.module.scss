@@ -1,0 +1,70 @@
+:root {
+  .body,
+  .head {
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: right;
+    margin: 1px 0;
+    padding: 5px 0;
+  }
+  .wrapper {
+    max-height: 470px;
+    overflow-y: auto;
+  }
+  .body > span,
+  .head > span {
+    width: 16%;
+    text-align: right;
+  }
+
+  .head {
+    color: var(--color-placeholder) !important;
+  }
+
+  .head span:first-child {
+    text-align: left;
+    width: 21%;
+  }
+
+  .head span:last-child {
+    width: 10%;
+  }
+
+  .body {
+    font-size: 12px;
+  }
+  .body-pool-address {
+    color: #1a88c9;
+    text-decoration: unset;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .transaction {
+    padding: 8px;
+  }
+  .body-name {
+    width: 21% !important;
+    text-align: left !important;
+  }
+  .link {
+    color: #1a88c9;
+    text-decoration: unset;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .body-time {
+    width: 10% !important;
+  }
+  .title {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}

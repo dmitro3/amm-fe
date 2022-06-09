@@ -1,0 +1,29 @@
+:root {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .select {
+    font-size: 16px;
+    line-height: 20px;
+
+    div:nth-child(2) {
+      padding: 0;
+      width: 100%;
+      overflow: hidden;
+
+      p {
+        font-size: 12px;
+        line-height: 16px;
+        border: inherit;
+        padding: 8px 0 8px 16px;
+        text-align: left;
+
+        &:hover {
+          background-color: #1a88c9;
+        }
+      }
+    }
+  }
+}

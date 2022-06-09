@@ -1,0 +1,37 @@
+:root {
+  .wallet-dialog-title {
+    > h2 {
+      width: 518px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 32px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .icon-container {
+    width: 28px;
+    height: 27.76px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+  .cancel-button,
+  cancel-button:hover {
+    background-color: #fff !important;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    box-shadow: none !important;
+  }
+
+  .save-button,
+  save-button:hover {
+    background-color: var(--color-success) !important;
+    box-shadow: none !important;
+  }
+}

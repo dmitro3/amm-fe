@@ -1,0 +1,123 @@
+:root {
+  .pair-statistic {
+    margin: 8px 12px 8px 12px;
+    padding: 16px;
+    padding-right: 50px;
+    background-color: var(--block-background);
+    border-radius: 10px;
+    display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    width: 100%;
+
+    .pair-statistic-left {
+      display: flex;
+    }
+    .pair-statistic-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-left: 130px;
+    }
+    .arrow-icon {
+      color: var(--arrow-icon);
+      font-size: 24px;
+    }
+    .sub-block {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      min-width: fit-content;
+      margin: 0 8px;
+      .label {
+        color: var(--placeholder);
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 6px;
+      }
+      .value {
+        color: var(--body-text);
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    .bid-value {
+      color: #06c270;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .nev-value {
+      color: #ff3b3b;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .pos-value {
+      color: #06c270;
+    }
+    .item-lastPrice {
+      display: flex;
+      margin-left: 30px;
+      align-items: center;
+      img {
+        width: 24px;
+        margin-right: 2px;
+      }
+    }
+    .item-lastPrice-percent {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      .last-price-liq {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      img {
+        margin-right: 2px;
+      }
+      .price-change-percent {
+        color: var(--body-text);
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    .price-gt {
+      color: #06c270 !important;
+    }
+    .price-lt {
+      color: #ff3b3b !important;
+    }
+    .item-ticker {
+      display: flex;
+      img {
+        height: 16px;
+        margin-right: 3px;
+      }
+    }
+    .last-price {
+      font-size: 26px;
+    }
+
+    .select-pair {
+      display: flex;
+      align-items: center;
+      .pair-name {
+        text-transform: none;
+        color: var(--text-color);
+      }
+      .button {
+        font-size: 20px;
+      }
+      .image-wallet-wrapper {
+        width: 24px;
+        height: 24px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

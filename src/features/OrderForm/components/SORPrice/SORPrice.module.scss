@@ -1,0 +1,21 @@
+:root {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--title-active);
+  }
+
+  .execute-time {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-body);
+  }
+}

@@ -1,0 +1,42 @@
+.login-attempts-exceeded {
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+
+  .login-attempts-exceeded-container-margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .login-attempts-exceeded-container {
+      width: 600px;
+      background: #ffffff;
+      box-shadow: 0px 4px 180px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      padding: 0;
+
+      .icon {
+        width: 215px;
+        height: 215px;
+        margin-top: 43px;
+      }
+
+      .login-attempts-exceeded-content {
+        color: var(--placeholder);
+        margin: 30px 43px 48px 43px;
+        font-size: 20px;
+        text-align: center;
+
+        .email-address {
+          font-style: italic;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

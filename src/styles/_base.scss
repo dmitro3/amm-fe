@@ -1,0 +1,118 @@
+@import './app';
+.loading-rotate {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  scrollbar-color: #828282 var(--bg-scroll-ff) !important;
+  scrollbar-width: thin !important;
+}
+
+.App {
+  min-width: 1500px;
+  // overflow-x: auto;
+  // height: 100vh;
+}
+
+.Snackbar {
+  .MuiSnackbar-anchorOriginTopRight {
+    top: 80px !important;
+  }
+}
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+
+.Content {
+  margin-top: 64px;
+  min-height: calc(100vh - 64px);
+}
+
+// TEXT
+.heading-h1 {
+  color: var(--color-title-active);
+  font-weight: 700;
+  font-size: calc(#{$size-origin} * 56) !important;
+  line-height: calc(#{$size-origin} * 72);
+}
+.heading-h2 {
+  color: var(--color-title-active);
+  font-weight: 700;
+  font-size: calc(#{$size-origin} * 40);
+  line-height: calc(#{$size-origin} * 56);
+}
+.heading-h3 {
+  color: var(--color-title-active);
+  color: var(--color-title-active);
+  font-weight: 500;
+  font-size: calc(#{$size-origin} * 28);
+  line-height: calc(#{$size-origin} * 40);
+}
+.heading-h4 {
+  color: var(--color-title-active);
+  font-weight: 500;
+  font-size: calc(#{$size-origin} * 26);
+  line-height: calc(#{$size-origin} * 32);
+}
+.heading-h5 {
+  color: var(--color-title-active);
+  font-weight: normal;
+  font-size: calc(#{$size-origin} * 22);
+  line-height: calc(#{$size-origin} * 34);
+}
+.heading-h6 {
+  color: var(--color-title-active);
+  font-weight: normal;
+  font-size: calc(#{$size-origin} * 20);
+  line-height: calc(#{$size-origin} * 28);
+}
+
+.text-large {
+  color: var(--color-title-active);
+  font-weight: 500;
+  font-size: calc(#{$size-origin} * 16);
+  line-height: calc(#{$size-origin} * 27);
+}
+.text-medium {
+  color: var(--color-title-active);
+  font-size: calc(#{$size-origin} * 14);
+  line-height: calc(#{$size-origin} * 20);
+}
+.text-small {
+  color: var(--color-title-active);
+  font-size: calc(#{$size-origin} * 12);
+  line-height: calc(#{$size-origin} * 16);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}

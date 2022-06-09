@@ -1,0 +1,51 @@
+.input-field {
+  margin: 10px 0;
+  width: 100%;
+
+  .error-span {
+    color: red;
+  }
+
+  .password-field-container {
+    position: relative;
+    width: 100%;
+
+    .form-input {
+      overflow: hidden;
+      width: 100%;
+
+      input {
+        background-color: var(--input-background);
+        color: var(--text-color);
+        padding: 12px 40px 12px 14px;
+      }
+
+      ::placeholder {
+        color: var(--color-placeholder-dark);
+        position: static;
+      }
+    }
+    .normal {
+      background-color: var(--input-background);
+      border: 1px solid var(--color-line);
+      border-radius: 10px;
+    }
+    .error {
+      background-color: var(--input-background);
+      border: 1px solid red !important;
+      border-radius: 10px;
+    }
+
+    .icon-container {
+      position: absolute;
+      right: 10px;
+      top: 30%;
+      cursor: pointer;
+
+      .icon {
+        width: 22;
+        height: 18;
+      }
+    }
+  }
+}

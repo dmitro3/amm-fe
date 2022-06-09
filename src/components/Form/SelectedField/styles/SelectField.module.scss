@@ -1,0 +1,31 @@
+.select-field-container {
+  margin: 10px 0;
+}
+
+.search-bar-container {
+  margin: 16px 16px 19px 16px;
+  position: relative;
+
+  .clear-search-icon-container {
+    position: absolute;
+    top: 22%;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .search-bar {
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid var(--color-line);
+
+    input {
+      background-color: var(--input-background);
+      color: var(--text-color);
+      padding: 12px 40px 12px 14px;
+    }
+  }
+}
+
+.options {
+  margin: 0px 16px 5px 16px;
+}

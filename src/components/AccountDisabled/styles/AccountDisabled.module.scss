@@ -1,0 +1,46 @@
+.account-disabled-container {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30px;
+
+  .wallet-dialog-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .icon {
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+  }
+
+  .account-disabled-content {
+    color: var(--placeholder);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+
+    .email-address {
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+
+  .comeback-homepage-btn {
+    width: 100%;
+    min-height: 44px;
+    margin-top: 30px;
+    font-size: 16px !important;
+  }
+
+  .comeback-homepage-btn:hover {
+    background-color: var(--primary-button-bg) !important;
+  }
+}

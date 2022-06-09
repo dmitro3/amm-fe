@@ -1,0 +1,107 @@
+:root {
+  .wrapper {
+    background-color: var(--pair-block-background);
+    // width: calc((100vw - 360px) / 3); /* Firefox */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    // margin: 20px 20px 20px 20px;
+    .name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .icon {
+        margin-right: 4px;
+      }
+      .pair-name {
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--color-body);
+      }
+    }
+    .price {
+      display: flex;
+      justify-content: space-around;
+      .divided {
+        height: 60%;
+        width: 1px;
+        background-color: var(--color-placeholder);
+        margin: 16px 0;
+      }
+      .label,
+      .amount {
+        color: var(--tab-text-color);
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .bid-price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        .price {
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 32px;
+          color: var(--color-success);
+          margin: 8px 0;
+        }
+      }
+      .ask-price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        .price {
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 32px;
+          color: var(--color-error);
+          margin: 8px 0;
+        }
+      }
+      .block-24h {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 20px;
+        .change-24h {
+          display: flex;
+          margin-top: 10px;
+          .price-changed {
+            margin-right: 10px;
+            color: var(--tab-text-color);
+          }
+          .price-changed_percent {
+            color: var(--tab-text-color);
+          }
+          .price-gt {
+            color: #06c270 !important;
+          }
+          .price-lt {
+            color: #ff3b3b !important;
+          }
+        }
+        .volume {
+          margin-top: 10px;
+          color: var(--tab-text-color);
+        }
+      }
+    }
+    .divided {
+      height: 1px;
+      width: 100%;
+      background-color: var(--color-placeholder);
+      margin: 16px 0;
+    }
+  }
+}

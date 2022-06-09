@@ -1,0 +1,26 @@
+:root {
+  .dropdown {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--background-dropdown);
+    max-height: 236px;
+    overflow: auto;
+    .dropdown-item {
+      cursor: pointer;
+      color: var(--color-dialog-title);
+      font-size: 12px;
+      line-height: 16px;
+      border-bottom: 1px solid var(--line);
+      &:last-child {
+        border: none;
+      }
+      &:hover {
+        background-color: rgba(#1a88c9, 0.5);
+        color: #ffffff;
+      }
+    }
+  }
+  .disable-first-style:first-of-type {
+    pointer-events: none;
+  }
+}

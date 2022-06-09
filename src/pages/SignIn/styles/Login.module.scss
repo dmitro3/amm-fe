@@ -1,0 +1,80 @@
+:root {
+  .user-sign-in {
+    background-image: url('../../../assets/img/background.svg');
+    background-size: cover;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    min-height: calc(100vh - 64px);
+    margin-top: 64px;
+    justify-content: center;
+    align-items: center;
+
+    .form-container-margin {
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      .form-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column;
+        padding: 30px;
+        width: 600px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+        background: 'white';
+        max-width: 700px;
+
+        .title {
+          color: var(--body-text);
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 56px;
+          margin-bottom: 30px;
+        }
+
+        > form {
+          display: flex;
+          flex-direction: column;
+
+          > label {
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: var(--color-body);
+          }
+
+          .forgot_password {
+            align-self: flex-end;
+            margin-top: -15px;
+            color: var(--color-body);
+          }
+        }
+
+        .g-recaptcha {
+          width: 100%;
+          margin-top: 48px;
+        }
+
+        .register {
+          text-align: center;
+          margin-top: 20px;
+          color: var(--body-text);
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 700;
+
+          .register_link {
+            font-weight: bold;
+            color: #1a88c9;
+          }
+        }
+      }
+    }
+  }
+  .btn-signin {
+    margin-top: 15px;
+  }
+}

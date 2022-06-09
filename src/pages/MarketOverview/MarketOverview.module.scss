@@ -1,0 +1,74 @@
+:root {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    .header {
+      display: flex;
+      align-items: center;
+      .label-filter {
+        color: var(--color-dialog-title);
+      }
+    }
+    .pairs {
+      margin-top: 48px;
+      .title {
+        color: var(--color-body);
+        margin-bottom: 16px;
+        font-size: 20px;
+      }
+      .pair-list {
+        // display: flex;
+        // flex-wrap: wrap;
+        $gap: 40px;
+
+        display: grid;
+        grid-template-columns: repeat(3, calc((100% - (#{$gap} * 2)) / 3));
+        margin-top: 34px;
+        grid-column-gap: $gap;
+        grid-row-gap: $gap;
+      }
+    }
+  }
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 16px;
+    .icon {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      position: relative;
+    }
+  }
+  .arrow-icon {
+    color: var(--arrow-icon);
+    font-size: 24px;
+  }
+  .volume-ref {
+    text-transform: none;
+    color: var(--color-body);
+    margin-right: 16px;
+    width: 180px;
+    max-width: 180px;
+    margin-left: 16px;
+    margin-right: 48px;
+    background-color: var(--bg-dropdown);
+    border: 1px solid var(--filter-input-border);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: none;
+  }
+  .volume-dropdown {
+    width: 180px;
+  }
+  .err-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    color: var(--color-error);
+  }
+}

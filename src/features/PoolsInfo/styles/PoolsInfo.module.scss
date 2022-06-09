@@ -1,0 +1,71 @@
+:root {
+  :global {
+    .assets-button {
+      background-color: var(--unactive-tab);
+      color: var(--color-body);
+      border-radius: 10px;
+      height: 36px;
+      min-height: 36px;
+
+      .Mui-selected {
+        color: white;
+      }
+    }
+    .assets-button .MuiTabs-indicator {
+      height: 100%;
+      background-color: var(--color-primary);
+      border-radius: 10px;
+    }
+    .assets-button .MuiTab-root {
+      z-index: 1000;
+      text-transform: none;
+      min-height: 36px;
+      min-width: 0px;
+      height: 36px;
+      padding: 8px 16px;
+    }
+    .assets-button .MuiTab-wrapper {
+      letter-spacing: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .assets-button .MuiTabs-scroller {
+      height: 36px;
+    }
+  }
+  .pools-info {
+    max-width: 1440px;
+    margin: 0px auto 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .button {
+      &__remove {
+        color: #f84960;
+        border: 1px solid #f84960;
+        margin-right: 10px;
+        padding: 8px 25px;
+        border-radius: 10px;
+      }
+
+      &__add {
+        background-color: #06c270;
+        color: white;
+        padding: 8px 25px;
+        border-radius: 10px;
+      }
+    }
+    .layout {
+      margin: 0 32px;
+      .block {
+        margin: 8px;
+        border-radius: 10px;
+        background-color: var(--block-background);
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "lang": "en",
+  "auth": {
+    "login": {
+      "password": "Password"
+    }
+  }
+}

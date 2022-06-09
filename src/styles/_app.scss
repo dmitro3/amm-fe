@@ -1,0 +1,491 @@
+body {
+  background-color: var(--background-color);
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+$size-origin: 1px;
+// SPACING BLOCK
+$space-2: calc(#{$size-origin} * 2);
+$space-4: calc(#{$size-origin} * 4);
+$space-8: calc(#{$size-origin} * 8);
+$space-12: calc(#{$size-origin} * 12);
+$space-16: calc(#{$size-origin} * 16);
+$space-20: calc(#{$size-origin} * 20);
+$space-30: calc(#{$size-origin} * 30);
+$space-48: calc(#{$size-origin} * 48);
+$space-60: calc(#{$size-origin} * 60);
+$space-60: calc(#{$size-origin} * 60);
+$space-64: calc(#{$size-origin} * 64);
+$space-96: calc(#{$size-origin} * 96);
+$space-128: calc(#{$size-origin} * 128);
+$space-160: calc(#{$size-origin} * 160);
+
+:root {
+  .MuiOutlinedInput-input {
+    padding: 12.5px 14px;
+  }
+  .MuiCheckbox-colorSecondary.Mui-checked {
+    color: var(--color-primary);
+  }
+
+  // Tooltip
+  .MuiTooltip-tooltip {
+    max-width: 322px;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 16px;
+    box-shadow: var(--tooltip-shadow);
+    background-color: var(--color-tooltip-bg);
+    color: var(--color-tooltip-body);
+    border: var(--tooltip-border);
+
+    .MuiTooltip-arrow::before {
+      background-color: var(--color-tooltip-bg);
+      border: var(--tooltip-border);
+    }
+  }
+
+  .tooltip-arrow-lg {
+    z-index: 5;
+  }
+
+  .tooltip-arrow-lg .MuiTooltip-tooltip {
+    .MuiTooltip-arrow {
+      width: 44px;
+      height: 30px;
+    }
+  }
+
+  .tooltip-arrow-lg .MuiTooltip-tooltipArrow {
+    margin: 22px 0px;
+  }
+
+  .tooltip-arrow-lg {
+    .MuiTooltip-tooltipPlacementTop {
+      .MuiTooltip-arrow {
+        bottom: 0;
+        margin-bottom: -30px;
+
+        &::before {
+          border-bottom-right-radius: 5px;
+          transform-origin: 100% 0;
+          box-shadow: var(--tooltip-shadow);
+        }
+      }
+    }
+  }
+
+  .tooltip-arrow-lg {
+    .MuiTooltip-tooltipPlacementBottom {
+      .MuiTooltip-arrow {
+        top: 0;
+        margin-top: -30px;
+
+        &::before {
+          border-top-left-radius: 5px;
+          transform-origin: 0 100%;
+        }
+      }
+    }
+  }
+
+  .MuiInputLabel-animated {
+    transition: none;
+  }
+
+  // color
+  --color-white: #fff;
+  --color-primary: #1a88c9;
+  --color-primary-darker: #3a449c;
+  --color-primary-lighter: #b4e5f9;
+  --color-title-active: #14142b;
+  --color-body: #4e4b66;
+  --color-label: #6e7191;
+  --color-placeholder: #a0a3bd;
+  --color-line: #e0e0e0;
+  --color-input-bg: #e6e8ea;
+  --color-bg: #f5f5f5;
+  --color-disabled: #e4e4eb;
+  --color-secondary: #2e1c8d;
+  --color-info: #73dfe7;
+  --color-error: #f84960;
+  --color-success: #06c270;
+  --color-warning: #ffcc00;
+  --color-primary-gradient: linear-gradient(105.99deg, #1a88c9 -4.53%, #9149ff 153.37%);
+  --color-secondary-gradient: linear-gradient(106.92deg, #da1a5d -12.65%, rgba(158, 118, 252, 0) 167.6%);
+  --color-border: #e0e0e0;
+  --border-line: #ddd;
+
+  // connect wallet
+  --color-dialog-bg: #ffffff;
+  --color-dialog-title: #4e4b66;
+  --color-dialog-label: #6e7191;
+  --color-dialog-btn-bg: #f5f5f5;
+  --color-connect-wallet-select-bg: #e4e4eb;
+  --color-connect-wallet-select-bg-hover: #e9f4fa;
+  --color-connect-wallet-select-body: #6e7191;
+  --color-connect-wallet-input-bg: #ffffff;
+  --color-connect-wallet-input-border: #333333;
+  --color-connected-wallet-bg: #ffffff;
+
+  // Select2
+  --color-select-body: #4e4b66;
+  --color-select-option-bg-hover: #828282;
+
+  // slippage tolerance
+  --color-slippage-btn: #a0a3bd;
+  --color-slippage-input: #a0a3bd;
+
+  //order form
+  --color-order-input-bg: #e6e8ea;
+
+  // confidence interval
+  --color-confidence-interval-bg: #f5f5f5;
+  --color-confidence-interval-body: #a0a3bd;
+  --color-confidence-interval-table-bg: #e6e8ea;
+  --color-confidence-interval-table-body: #898ba1;
+  --color-confidence-interval-seperator: #3d4045;
+
+  // button
+  --btn-text-disabled: var(--color-placeholder);
+  --btn-border-secondary-disabled: #f1f1f5;
+
+  --background-color: #f5f5f5;
+  --block-background: #fafafa;
+  --nav-bar-bg: #fefcfc;
+  --text-color: #4f4f4f;
+  --title-active: #14142b;
+  --arrow-icon: #a0a3bd;
+  --primary-button-bg: #1a88c9;
+  --label: #6e7191;
+  --body-text: #4e4b66;
+  --placeholder: #a0a3bd;
+  --line: #e0e0e0;
+  --data-table: #4e4b66;
+  --popup-background: #ffffff;
+  --tab-text-color: #a0a3bd;
+  --tab-text-color-transaction: #000000;
+  --input-background: #ffffff;
+  --border-input-background: #d9dbe9;
+  --popup-input-color: #333333;
+  --active-tab: #6e7191;
+  --background-dropdown: #ffffff;
+  --unactive-tab: #e0e0e0;
+  --tab-border: #e0e0e0;
+  --pool-active-tab: #4e4b66;
+  --pool-inactive-tab: #a0a3bd;
+  --detail-button-mytransaction: #f5f5f5;
+  --trade-button-mytransaction: #dadada;
+  --trade-button-active-mytransaction: #bebebe;
+  --mytrans-table-bg: #fafafa;
+  --under-line: #c5c6cc;
+  // trading view chart
+  --trading-view-btn-background-active: #1a88c9;
+  --pair-block-background: #ffffff;
+  --filter-input-background: #f5f5f5;
+  --filter-input-border: #e6e8ea;
+  --place-holder: #828282;
+
+  // sidebar
+  --bg-sidebar: #fafafa;
+  --active-route: #e6e8ea;
+  --color-route: #6e7191;
+
+  --bg-accordion: #e6e8ea;
+  --background-accordion-table: #e0e0e0;
+  --border-accordion-table: #a0a3bd;
+
+  // line graph
+  --background-line-graph: #fafafa;
+  --divider-line-graph: #e8e8ed;
+  --label-line-graph: #4e4b66;
+  --line-graph-color-1: #f4a164;
+  --line-graph-color-2: #8b85e2;
+
+  // radio create new pool
+  --bg-radio: var(--color-white);
+  --bg-checked-radio: #f7f7fc;
+  --border-radio: var(--color-primary);
+
+  // new pool request
+  --td-border: #d6d6d6;
+
+  // order book
+  --bg-orderbook-option: #e6e8ea;
+
+  // order routing
+  --routing-pool: #ffffff;
+  --accordion-text: #848e9c;
+
+  // date range picker
+  --background-date-range-picker: #ffffff;
+  --range-on-select: #f8f7fa;
+  --color-on-select: #1988c9;
+  --color-date-range-picker: #191819;
+  --color-month-name: #19181a;
+  --border-date-range-picker: #f6f6f7;
+  --passive-date: #a3a3a3;
+  --color-cancel-btn: #19181a;
+
+  // pool list
+  --fee-select: #ffffff;
+  --pool-search: #e6e8ea;
+
+  // balances
+  --color-bg-balances: #fafafa;
+  --color-line-balances: #e0e0e0;
+
+  // tooltip
+  --bg-tooltip: #fafafa;
+  --color-tooltip: #848e9c;
+
+  // tooltip
+  --tooltip-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --color-tooltip-bg: #ffffff;
+  --tooltip-border: 1px solid #e0e0e0;
+  --color-tooltip-title: #14142b;
+  --color-tooltip-body: #4e4b66;
+
+  // market overview
+  --bg-dropdown: #dedcdc;
+
+  // scroll background
+  --bg-scroll-ff: #ffffff;
+
+  // checkbox image
+  --checkbox-image-color: #ffffff;
+
+  // Datagrid
+  --datagrid-color: rgba(255, 255, 255, 0.85);
+  --datagrid-backgroundColor: #fafafa;
+  --datagrid-borderBottom: #e0e0e0;
+  --datagrid-cell: #a0a3bd;
+  --datagrid-cellColor: #4e4b66;
+  --datagrid-overlayColor: rgba(0, 0, 0, 0.85);
+}
+[data-theme='dark'] {
+  // color
+  --color-white: #fff;
+  --color-primary: #1a88c9;
+  --color-primary-darker: #3a449c;
+  --color-primary-lighter: #b4e5f9;
+  --color-title-active: #fff;
+  --color-body: #848e9c;
+  --color-label: #3d4045;
+  --color-placeholder: #828282;
+  --color-line: #333;
+  --color-input-bg: #2a2c33;
+  --color-bg: #232424;
+  --color-disabled: #333;
+  --color-secondary: #8553d1;
+  --color-info: #73dfe7;
+  --color-error: #ff3b3b;
+  --color-success: #06c270;
+  --color-warning: #ffcc00;
+  --color-primary-gradient: linear-gradient(105.99deg, #da1a5d -4.53%, rgba(249, 187, 207, 0) 153.37%);
+  --color-secondary-gradient: linear-gradient(106.92deg, #da1a5d -12.65%, rgba(158, 118, 252, 0) 167.6%);
+  --color-border: #494a4a;
+
+  // connect wallet
+  --color-dialog-bg: #2a2c33;
+  --color-dialog-title: #ffffff;
+  --color-dialog-label: #848e9c;
+  --color-dialog-btn-bg: #333333;
+  --color-connect-wallet-select-bg: #333333;
+  --color-connect-wallet-select-bg-hover: #2b6486;
+  --color-connect-wallet-select-body: #ffffff;
+  --color-connect-wallet-input-bg: #333333;
+  --color-connect-wallet-input-border: #333333;
+  --color-connected-wallet-bg: #3d4045;
+
+  // Select2
+  --color-select-body: #ffffff;
+  --color-select-option-bg-hover: #1a88c9;
+
+  // button
+  --btn-text-disabled: #4f4f4f;
+  --btn-border-secondary-disabled: #333;
+
+  // slippage tolerance
+  --color-slippage-btn: #3d4045;
+  --color-slippage-input: #ffffff;
+
+  //order form
+  --color-order-input-bg: #3d4045;
+
+  // confidence interval
+  --color-confidence-interval-bg: #333333;
+  --color-confidence-interval-body: #828282;
+  --color-confidence-interval-table-bg: #3d4045;
+  --color-confidence-interval-table-body: #848e9c;
+
+  --background-color: #232424;
+  --block-background: #2a2c33;
+  --nav-bar-bg: #12161c;
+  --text-color: #ffffff;
+  --title-active: #ffffff;
+  --primary-button-bg: #1a88c9;
+  --label: #3d4045;
+  --body-text: #848e9c;
+  --placeholder: #828282;
+  --line: #828282;
+  --data-table: #ffffff;
+  --popup-background: #2a2c33;
+  --tab-text-color: #848e9c;
+  --tab-text-color-transaction: #ffffff;
+  --input-background: #333333;
+  --border-input-background: #333333;
+  --popup-input-placeholder: #828282;
+  --popup-input-color: #828282;
+  --active-tab: #ffffff;
+  --unactive-tab: #3d4045;
+  --tab-border: #333333;
+  --pool-active-tab: #ffffff;
+  --pool-inactive-tab: #848e9c;
+  --background-dropdown: #2a2c33;
+  --detail-button-mytransaction: #3d4045;
+  --trade-button-mytransaction: #3d4045;
+  --trade-button-active-mytransaction: #747474;
+  --mytrans-table-bg: #2a2c33;
+  --under-line: #848e9c;
+  // input
+  --pair-block-background: #333333;
+  // trading-view-chart
+  --trading-view-btn-background-dark: #828282;
+  --filter-input-background: #3d4045;
+  --filter-input-border: #333333;
+
+  // sidebar
+  --bg-sidebar: #2a2c33;
+  --active-route: #3d4045;
+  --color-route: #848e9c;
+
+  --bg-accordion: #333333;
+  --background-accordion-table: #3d4045;
+  --border-accordion-table: #333333;
+
+  // line graph
+  --background-line-graph: #242628;
+  --divider-line-graph: #333333;
+  --label-line-graph: #ffffff;
+  --line-graph-color-1: #f4a164;
+  --line-graph-color-2: #8b85e2;
+
+  // radio create new pool
+  --bg-radio: #3d4045;
+  --bg-checked-radio: #f7f7fc;
+  --border-radio: var(--color-primary);
+
+  // new pool request
+  --td-border: #494c52;
+
+  // order book
+  --bg-orderbook-option: #3d4045;
+
+  // order routing
+  --routing-pool: #3d4045;
+  --accordion-text: #848e9c;
+
+  // date range picker
+  --background-date-range-picker: #28272a;
+  --range-on-select: #2a2c33;
+  --color-on-select: #f8f7fa;
+  --color-date-range-picker: #c9c8cc;
+  --color-month-name: #f8f7fa;
+  --border-date-range-picker: #2e2d30;
+  --passive-date: #68676a;
+  --color-cancel-btn: #c9c8cc;
+
+  // fee select
+  --fee-select: #3d4045;
+  --pool-search: #3d4045;
+
+  // balances
+  --color-bg-balances: #232424;
+  --color-line-balances: #e0e0e0;
+
+  // tooltip
+  --bg-tooltip: #3d4045;
+  --color-tooltip: #848e9c;
+
+  // tooltip
+  --tooltip-shadow: 0px 4px 4px rgba(255, 255, 255, 0.05);
+  --tooltip-border: 1px solid #333333;
+  --color-tooltip-bg: #3d4045;
+  --color-tooltip-title: #e0e0e0;
+  --color-tooltip-body: #848e9c;
+
+  // market overview
+  --bg-dropdown: #333333;
+
+  // scroll background
+  --bg-scroll-ff: #2a2c33;
+
+  // checkbox image
+  --checkbox-image-color: #3d4045;
+
+  // Datagrid
+  --datagrid-color: rgba(0, 0, 0, 0.85);
+  --datagrid-backgroundColor: #2a2c33;
+  --datagrid-borderBottom: #333333;
+  --datagrid-cell: rgba(255, 255, 255, 0.65);
+  --datagrid-cellColor: #ffffff;
+  --datagrid-overlayColor: rgba(255, 255, 255, 0.85);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  height: 10px !important;
+  width: 10px !important;
+  scrollbar-color: #828282 var(--bg-scroll-ff) !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f3f3f3;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border: none !important;
+  background: #c4c4c4 !important;
+  border-radius: 10px;
+  height: 38px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c4c4c4;
+}
+
+.MuiPaper-rounded {
+  border-radius: 20px !important;
+}
+.MuiPaper-root {
+  background-color: var(--color-dialog-bg) !important;
+}
+.MuiPopover-root {
+  .MuiPaper-rounded {
+    border-radius: 10px !important;
+  }
+}
+
+.MuiPaper-elevation8 {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}

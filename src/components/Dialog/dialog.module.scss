@@ -1,0 +1,40 @@
+:root {
+  .title {
+    font-size: 26px;
+    margin: 30px 0;
+    font-weight: 500;
+    color: var(--color-dialog-title);
+  }
+  .button-dialog {
+    margin: 15px;
+    padding: 15px;
+    background-color: #1a88c9;
+    border-radius: 10px;
+    color: #ffffff;
+    &:hover {
+      background-color: #1a88c9;
+    }
+  }
+  .dialog-content {
+    color: var(--color-dialog-label);
+  }
+  .hidden {
+    visibility: hidden;
+    margin-top: 32px;
+    margin-left: 32px;
+  }
+  .close-button {
+    margin-top: 32px;
+    margin-right: 32px;
+    color: var(--color-dialog-label);
+  }
+  .icon {
+    text-align: center;
+  }
+  .link-under {
+    text-align: center;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    color: var(--tab-text-color-transaction);
+  }
+}

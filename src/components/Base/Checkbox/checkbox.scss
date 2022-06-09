@@ -1,0 +1,110 @@
+/* The container */
+.theme-checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 36px;
+}
+
+/* Hide the browser's default checkbox */
+.theme-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.theme-checkbox-checkmark {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #e6e6e6;
+}
+
+/* On mouse-over, add a grey background color */
+.theme-checkbox-container:hover input ~ .theme-checkbox-checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.theme-checkbox-container input:checked ~ .theme-checkbox-checkmark {
+  background-color: var(--color-primary) !important;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.theme-checkbox-checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.theme-checkbox-container input:checked ~ .theme-checkbox-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.theme-checkbox-container .theme-checkbox-checkmark:after {
+  left: 5px;
+  top: 0px;
+  width: 6px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+// size
+.custom-checkbox-large {
+  .theme-checkbox-checkmark {
+    height: 26px;
+    width: 26px;
+  }
+  .theme-checkbox-checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 10px;
+    height: 18px;
+  }
+}
+.custom-checkbox-medium {
+  .theme-checkbox-checkmark {
+    height: 20px;
+    width: 20px;
+  }
+  .theme-checkbox-checkmark:after {
+    left: 5px;
+    top: 0;
+    width: 6px;
+    height: 13px;
+  }
+}
+.custom-checkbox-small {
+  .theme-checkbox-checkmark {
+    height: 16px;
+    width: 16px;
+  }
+  .theme-checkbox-checkmark:after {
+    border-width: 0 2px 2px 0;
+    border-radius: 1px;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 9px;
+  }
+}

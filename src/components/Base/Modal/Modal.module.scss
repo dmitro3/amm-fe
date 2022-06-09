@@ -1,0 +1,29 @@
+:root {
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    .modal-panel {
+      position: absolute;
+      height: fit-content;
+      width: 578px;
+      padding: 30px;
+      background-color: var(--color-dialog-bg);
+      border-radius: 20px;
+      text-align: center;
+      .close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+      }
+      .title {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+        color: var(--title-active);
+      }
+    }
+  }
+}

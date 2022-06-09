@@ -1,0 +1,33 @@
+:root {
+  .data {
+    display: flex;
+    align-items: center;
+    color: var(--color-tooltip-body);
+    margin: 10px 0 13px 0;
+  }
+
+  .stellar {
+    margin-right: 20px;
+  }
+
+  .limit,
+  .market {
+    display: flex;
+    align-items: center;
+  }
+
+  .limit {
+    margin-top: 16px;
+  }
+
+  .icon-container {
+    display: inline-flex;
+
+    svg {
+      pointer-events: none;
+      path {
+        fill: var(--color-tooltip-body);
+      }
+    }
+  }
+}

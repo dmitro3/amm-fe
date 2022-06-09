@@ -1,0 +1,86 @@
+:root {
+  .container {
+    max-width: 1440px;
+    padding: 20px 0;
+    margin: 0 auto;
+    h2 {
+      color: var(--color-body);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      &__left {
+        display: flex;
+        align-items: center;
+
+        .type-buttons {
+          background-color: var(--pool-search);
+          border-radius: 10px;
+          margin-right: 16px;
+          height: 36px;
+          button {
+            width: 100px;
+            height: inherit;
+            border-radius: 10px;
+            color: var(--body-text);
+          }
+          .type-buttons--active {
+            background-color: var(--color-primary);
+            color: white;
+          }
+        }
+
+        .fee {
+          margin-left: 15px;
+          border: 1px solid black;
+          height: 36px;
+          width: 168px;
+          border-radius: 10px;
+          border: 1px solid var(--tab-border);
+          background-color: var(--fee-select);
+          font-size: 14px;
+
+          select {
+            color: #828282;
+            padding: 8px 16px;
+            &:focus {
+              background-color: inherit;
+              border-radius: 10px;
+            }
+          }
+
+          img {
+            width: 12px;
+            padding-right: 12px;
+          }
+
+          &:before,
+          &:after {
+            border: none;
+          }
+        }
+      }
+    }
+
+    .assets {
+      margin: 5px 10px 5px;
+      display: grid;
+      width: 100%;
+      grid-template-columns: auto auto;
+
+      &__item {
+        padding-right: 5px;
+      }
+    }
+
+    .request-btn {
+      span {
+        height: 20px;
+      }
+    }
+  }
+}

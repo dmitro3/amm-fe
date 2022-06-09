@@ -1,0 +1,39 @@
+:root {
+  .ordertable__body,
+  .ordertable__head {
+    font-size: 13px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: right;
+    margin: 1px 0;
+    // background: red;
+    // opacity: 0.2;
+  }
+
+  .ordertable__body > span,
+  .ordertable__head > span {
+    width: 33%;
+    text-align: right;
+  }
+
+  .ordertable__head {
+    color: var(--color-placeholder) !important;
+  }
+
+  .ordertable__head span:first-child {
+    text-align: left;
+  }
+
+  .ordertable__body {
+    font-size: 12px;
+  }
+
+  .ordertable-overlay {
+    position: absolute;
+    height: 100%;
+    opacity: 0.2;
+    right: 0;
+  }
+}

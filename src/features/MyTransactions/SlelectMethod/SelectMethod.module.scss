@@ -1,0 +1,136 @@
+:root {
+  .container {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    color: var(--color-select-body);
+
+    // disable select text
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+
+    .select {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background-color: var(--input-background);
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        margin: 0 4px;
+      }
+
+      svg {
+        path {
+          fill: var(--color-select-body);
+        }
+      }
+      &:hover {
+        // background-color: rgba(0, 0, 0, 0.04);
+        background: var(--color-order-input-bg) !important;
+      }
+    }
+
+    .option {
+      display: flex;
+      position: absolute;
+      top: 110%;
+      flex-direction: column;
+      border-radius: 10px;
+      border: 1px solid var(--color-input-bg);
+      // padding: 8px 0;
+      background-color: var(--background-dropdown);
+      z-index: 2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      .icon {
+        margin-right: 8px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .label {
+        margin: 0;
+        cursor: pointer;
+        text-align: left;
+        // padding: 4px 12px;
+        box-sizing: border-box;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+      }
+      &:hover {
+        color: #ffffff;
+        background-color: rgba(26, 136, 201, 0.5);
+      }
+    }
+
+    .under-line {
+      height: 1px;
+      background-color: var(--under-line);
+    }
+
+    // variant
+    .contained {
+      background: var(--color-order-input-bg);
+    }
+
+    // size
+    .md {
+      font-size: 12px;
+    }
+    .lg {
+      font-size: 16px;
+      min-width: 168px;
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    cursor: default;
+    content: ' ';
+    background: transparent;
+  }
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    .icon {
+      color: var(--arrow-icon);
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
